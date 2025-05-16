@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Z世代探索者 | 个人简介</title>
+    <title>OrangeRain | 个人简介</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -17,31 +17,32 @@
                         secondary: '#EC4899',
                         accent: '#10B981',
                         dark: '#1F2937',
-                        light: '#F9FAFB'
+                        light: '#F9FAFB',
+                        orange: '#FF8C00' // 添加橙色变量，这里的色值可按需调整
                     },
                     fontFamily: {
-                        inter: ['Inter', 'sans-serif'],
+                        inter: ['Inter','sans-serif'],
                     },
                 }
             }
-        }
+        };
     </script>
     
     <style type="text/tailwindcss">
         @layer utilities {
-            .content-auto {
+        .content-auto {
                 content-visibility: auto;
             }
-            .text-shadow {
-                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        .text-shadow {
+                text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             }
-            .hover-scale {
+        .hover-scale {
                 transition: transform 0.3s ease;
             }
-            .hover-scale:hover {
+        .hover-scale:hover {
                 transform: scale(1.03);
             }
-            .animate-float {
+        .animate-float {
                 animation: float 6s ease-in-out infinite;
             }
             @keyframes float {
@@ -49,8 +50,8 @@
                 50% { transform: translateY(-10px); }
                 100% { transform: translateY(0px); }
             }
-            .gradient-bg {
-                background: linear-gradient(135deg, #4F46E5 0%, #8B5CF6 100%);
+        .gradient-bg {
+                background: linear-gradient(135deg, #b29cdf 0%, #712ca1 100%); /* 起始色为橙色，结束色为黄色，实现橙黄渐变 */
             }
         }
     </style>
@@ -65,22 +66,22 @@
             
             <!-- 个人信息 -->
             <div class="absolute bottom-0 left-0 w-full px-6 pb-6 flex flex-col md:flex-row items-center md:items-end gap-4">
-                <!-- 头像 -->
-                <!-- <div class="relative z-10 animate-float">
+                <!-- 头像 头像文件在photo里 -->
+                <div class="relative z-10 animate-float">
                     <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-white shadow-lg">
-                        <img src="https://picsum.photos/seed/chiikawa/400/400" alt="个人头像" class="w-full h-full object-cover">
+                        <img src="./photo/2.png" alt="个人头像" class="w-full h-full object-cover">
                     </div>
                     <div class="absolute -bottom-2 -right-2 bg-accent text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
                         ESTJ
                     </div>
-                </div> -->
+                </div>
                 
                 <!-- 名字和标签 -->
                 <div class="flex-1 text-center md:text-left">
-                    <h1 class="text-[clamp(1.8rem,5vw,2.5rem)] font-bold text-white text-shadow mb-1">Z世代探索者</h1>
-                    <p class="text-[clamp(1rem,3vw,1.2rem)] text-white/90 font-medium mb-3">边缘科技爱好者 | 播客控 | 终身学习者</p>
+                    <h1 class="text-[clamp(1.8rem,5vw,2.5rem)] font-bold text-white text-shadow mb-1">Orange Rain橙雨</h1>
+                    <p class="text-[clamp(1rem,3vw,1.2rem)] text-white/90 font-medium mb-3">泛科技爱好者 | 播客控 | 终身学习者</p>
                     
-                    <!-- 社交媒体链接 -->
+                    <!-- 社交媒体链接 +标签
                     <div class="flex justify-center md:justify-start gap-3">
                         <a href="#" class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white hover:bg-white/30 transition-all">
                             <i class="fa-brands fa-twitter"></i>
@@ -94,7 +95,7 @@
                         <a href="#" class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white hover:bg-white/30 transition-all">
                             <i class="fa-brands fa-instagram"></i>
                         </a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -107,7 +108,7 @@
                     <i class="fa-solid fa-user-circle text-primary mr-2"></i> 关于我
                 </h2>
                 <p class="text-gray-700 leading-relaxed mb-4">
-                    兴趣爱好极其广泛、不愿被世俗裹挟的Z世代er，边缘科技or科幻迷，啃过扎克伯格冗长的访谈，每天的爱好是薅chatgpt的新点子。
+                    兴趣爱好极其广泛、不愿被世俗裹挟的Z世代er，泛科技or科幻迷，啃过扎克伯格冗长的访谈，每天的爱好是薅chatgpt的新点子。
                 </p>
                 <p class="text-gray-700 leading-relaxed mb-4">
                     相信耳朵才是心灵的窗户，英语播客+各种pop乐稳定我每日好心情；买书如山倒的同时也在努力抽丝，没有灵感就会钻到前人的文字里畅游。
@@ -127,7 +128,7 @@
                         <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mb-3">
                             <i class="fa-solid fa-microchip text-primary"></i>
                         </div>
-                        <h3 class="font-semibold text-gray-800">边缘科技</h3>
+                        <h3 class="font-semibold text-gray-800">体验AI</h3>
                     </div>
                     <div class="bg-gray-50 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow">
                         <div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center mb-3">
@@ -135,6 +136,12 @@
                         </div>
                         <h3 class="font-semibold text-gray-800">英语播客</h3>
                     </div>
+                    <div class="bg-gray-50 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center mb-3">
+                          <i class="fa-solid fa-palette text-secondary"></i> <!-- 替换为调色板图标 -->
+                        </div>
+                        <h3 class="font-semibold text-gray-800">绘画（平面设计）</h3>
+                      </div>
                     <div class="bg-gray-50 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow">
                         <div class="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center mb-3">
                             <i class="fa-solid fa-book text-accent"></i>
@@ -145,7 +152,7 @@
                         <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mb-3">
                             <i class="fa-solid fa-music text-blue-500"></i>
                         </div>
-                        <h3 class="font-semibold text-gray-800">Pop音乐</h3>
+                        <h3 class="font-semibold text-gray-800">POP乐</h3>
                     </div>
                 </div>
             </div>
@@ -153,7 +160,8 @@
             <!-- 技能标签 -->
             <div>
                 <h2 class="text-2xl font-bold text-dark mb-4 flex items-center">
-                    <i class="fa-solid fa-code text-primary mr-2"></i> 知识领域
+                    <i class="fa-solid fa-book text-primary mr-2"></i> <!-- 原代码是fa-solid fa-code，这里改为fa-solid fa-book -->
+                    知识领域
                 </h2>
                 <div class="flex flex-wrap gap-2">
                     <span class="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium">人工智能</span>
@@ -166,8 +174,22 @@
                     <span class="px-4 py-2 bg-red-100 text-red-600 rounded-full text-sm font-medium">科幻文学</span>
                 </div>
             </div>
+        <br><br>
+         <!-- 个人座右铭 -->
+         <div class="mb-8">
+            <h2 class="text-2xl font-bold text-dark mb-4 flex items-center">
+                <i class="fa-regular fa-comment text-secondary mr-2"></i>
+                个人座右铭
+            </h2>
+            <div class="prose lg:prose-xl max-w-none text-gray-700">
+                <blockquote>
+                    <p>人不应该是插在花瓶里供人观赏的静物，而是蔓延在草原上随风起舞的旋律。——伍尔夫</p>
+                </blockquote>
+                <blockquote>
+                    <p>最要紧的是，我们首先应该善良，其次要诚实，再其次是以后永远不要相互遗忘。——陀思妥耶夫斯基</p>
+                </blockquote>
+            </div>
         </div>
-        
         <!-- 页脚 -->
         <div class="bg-gray-50 px-6 py-4 border-t border-gray-100">
             <div class="flex flex-col md:flex-row justify-between items-center">
